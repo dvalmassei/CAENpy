@@ -155,7 +155,7 @@ class CAENDesktopHighVoltagePowerSupply:
 		expected_ramping_seconds = ((current_voltage-voltage)**2)**.5/ramp_speed_VperSec
 		try:
 			self.set_single_channel_parameter(
-				parameter = 'VSET',
+				parameter = 'ON',
 				channel = channel,
 				device = device,
 				value = voltage,
